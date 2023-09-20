@@ -1,7 +1,11 @@
 package main
 
-import "github.com/chriscarsam/gofrom0/variables"
+import (
+	"fmt"
+
+	"github.com/chriscarsam/gofrom0/variables"
+)
 
 func main() {
-	variables.RestVariables()
+	fmt.Println(variables.ConvertText(1544))
 }
