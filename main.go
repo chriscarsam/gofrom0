@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/chriscarsam/gofrom0/exercises"
-)
+import "github.com/chriscarsam/gofrom0/keyboard"
 
 func main() {
-	fmt.Println(exercises.ConverValue("500"))
+	// fmt.Println(exercises.ConverValue("500"))
+	keyboard.EnterNumbers()
 }
