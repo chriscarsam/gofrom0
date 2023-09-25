@@ -8,8 +8,9 @@ import (
 )
 
 // exercice02 - Multiplication table
+var text string
 
-func MultiplicationTable() {
+func MultiplicationTable() string {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Print("Enter a number to multiply: ")
@@ -19,10 +20,11 @@ func MultiplicationTable() {
 		if err != nil {
 			MultiplicationTable()
 		} else {
-			fmt.Printf("*** Table of %d ***\n", value)
+			text += fmt.Sprintf("*** Table of %d ***\n", value)
 			for i := 1; i <= 10; i++ {
-				fmt.Printf("%d x %d = %d \n", value, i, i*value)
+				text += fmt.Sprintf("%d x %d = %d \n", value, i, i*value)
 			}
 		}
 	}
+	return text
 }
