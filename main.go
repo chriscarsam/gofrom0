@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/chriscarsam/gofrom0/functions"
-)
+import arrangementsslices "github.com/chriscarsam/gofrom0/arrangements_slices"
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -14,5 +12,7 @@ func main() {
 	//files.ReadFile()
 	//functions.Calculations()
 	//functions.CallClosure()
-	functions.Exponence(2)
+	//functions.Exponence(2)
+	//arrangementsslices.ShowSlice()
+	arrangementsslices.Capacity()
 }
