@@ -13,5 +13,6 @@ func main() {
 	//files.AddTable()
 	//files.ReadFile()
 	//functions.Calculations()
-	functions.CallClosure()
+	//functions.CallClosure()
+	functions.Exponence(2)
 }
