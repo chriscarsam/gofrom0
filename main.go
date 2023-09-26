@@ -1,6 +1,8 @@
 package main
 
-import "github.com/chriscarsam/gofrom0/files"
+import (
+	"github.com/chriscarsam/gofrom0/functions"
+)
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -9,5 +11,7 @@ func main() {
 	//fmt.Println(exercises.MultiplicationTable())
 	//files.SaveTable()
 	//files.AddTable()
-	files.ReadFile()
+	//files.ReadFile()
+	//functions.Calculations()
+	functions.CallClosure()
 }
