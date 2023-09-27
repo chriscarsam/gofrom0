@@ -1,6 +1,9 @@
 package main
 
-import "github.com/chriscarsam/gofrom0/users"
+import (
+	"github.com/chriscarsam/gofrom0/exer_interfaces"
+	"github.com/chriscarsam/gofrom0/models"
+)
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -16,5 +19,10 @@ func main() {
 	//arrangementsslices.ShowSlice()
 	//arrangementsslices.Capacity()
 	//maps.ShowMaps()
-	users.UserRegistration()
+	//users.UserRegistration()
+	Charly := new(models.Man)
+	exer_interfaces.HumanBreathing(Charly)
+
+	Isabella := new(models.Woman)
+	exer_interfaces.HumanBreathing(Isabella)
 }
