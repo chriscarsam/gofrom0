@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/chriscarsam/gofrom0/maps"
-)
+import "github.com/chriscarsam/gofrom0/users"
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -17,5 +15,6 @@ func main() {
 	//functions.Exponence(2)
 	//arrangementsslices.ShowSlice()
 	//arrangementsslices.Capacity()
-	maps.ShowMaps()
+	//maps.ShowMaps()
+	users.UserRegistration()
 }
