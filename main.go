@@ -1,6 +1,10 @@
 package main
 
-import "github.com/chriscarsam/gofrom0/defer_panic"
+import (
+	"fmt"
+
+	"github.com/chriscarsam/gofrom0/goroutines"
+)
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -22,5 +26,9 @@ func main() {
 
 	Isabella := new(models.Woman)
 	exer_interfaces.HumanBreathing(Isabella) */
-	defer_panic.ExamplePanic()
+	//defer_panic.ExamplePanic()
+	go goroutines.MySlowName("Charly Test")
+	fmt.Println("I am here")
+	var x string
+	fmt.Scanln(&x)
 }
