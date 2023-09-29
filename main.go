@@ -27,8 +27,11 @@ func main() {
 	Isabella := new(models.Woman)
 	exer_interfaces.HumanBreathing(Isabella) */
 	//defer_panic.ExamplePanic()
-	go goroutines.MySlowName("Charly Test")
+	chanel1 := make(chan bool)
+	go goroutines.MySlowName("Charly Test", chanel1)
+	defer func() {
+		<-chanel1
+	}()
 	fmt.Println("I am here")
-	var x string
-	fmt.Scanln(&x)
+
 }
