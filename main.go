@@ -1,9 +1,6 @@
 package main
 
-import (
-	"github.com/chriscarsam/gofrom0/exer_interfaces"
-	"github.com/chriscarsam/gofrom0/models"
-)
+import "github.com/chriscarsam/gofrom0/defer_panic"
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -20,9 +17,10 @@ func main() {
 	//arrangementsslices.Capacity()
 	//maps.ShowMaps()
 	//users.UserRegistration()
-	Charly := new(models.Man)
+	/* Charly := new(models.Man)
 	exer_interfaces.HumanBreathing(Charly)
 
 	Isabella := new(models.Woman)
-	exer_interfaces.HumanBreathing(Isabella)
+	exer_interfaces.HumanBreathing(Isabella) */
+	defer_panic.ExamplePanic()
 }

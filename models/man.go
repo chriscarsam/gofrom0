@@ -10,6 +10,11 @@ type Man struct {
 	alive     bool
 }
 
+// IsAlive implements interfaces.Human.
+func (*Man) IsAlive() bool {
+	panic("unimplemented")
+}
+
 func (m *Man) Breathe()    { m.breathing = true }
 func (m *Man) Eat()        { m.eating = true }
 func (m *Man) Think()      { m.thinking = true }
