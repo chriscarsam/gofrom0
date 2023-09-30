@@ -1,6 +1,8 @@
 package main
 
-import "github.com/chriscarsam/gofrom0/webserver"
+import (
+	"github.com/chriscarsam/gofrom0/middleware"
+)
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -29,6 +31,7 @@ func main() {
 		<-chanel1
 	}()
 	fmt.Println("I am here") */
-	webserver.MyWebServer()
+	//webserver.MyWebServer()
+	middleware.MyMiddleware()
 
 }
