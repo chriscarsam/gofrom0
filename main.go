@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/chriscarsam/gofrom0/goroutines"
-)
+import "github.com/chriscarsam/gofrom0/webserver"
 
 func main() {
 	// fmt.Println(exercises.ConverValue("500"))
@@ -27,11 +23,12 @@ func main() {
 	Isabella := new(models.Woman)
 	exer_interfaces.HumanBreathing(Isabella) */
 	//defer_panic.ExamplePanic()
-	chanel1 := make(chan bool)
+	/* chanel1 := make(chan bool)
 	go goroutines.MySlowName("Charly Test", chanel1)
 	defer func() {
 		<-chanel1
 	}()
-	fmt.Println("I am here")
+	fmt.Println("I am here") */
+	webserver.MyWebServer()
 
 }
